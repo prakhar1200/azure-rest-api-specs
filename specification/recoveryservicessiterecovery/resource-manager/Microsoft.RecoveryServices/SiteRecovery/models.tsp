@@ -14554,6 +14554,12 @@ model InMageRcmEnableProtectionInput
   targetCapacityReservationGroupId?: string;
 
   /**
+   * The target extended location.
+   */
+  @added(Versions.v2026_10_01)
+  targetExtendedLocation?: ExtendedLocation;
+
+  /**
    * The class type.
    */
   instanceType: "InMageRcm";
@@ -16140,6 +16146,13 @@ model InMageRcmReplicationDetails extends ReplicationProviderSpecificSettings {
    * The target location.
    */
   targetLocation?: string;
+
+  /**
+   * The target extended location.
+   */
+  @added(Versions.v2026_10_01)
+  @visibility(Lifecycle.Read)
+  targetExtendedLocation?: ExtendedLocation;
 
   /**
    * The target availability set Id.
