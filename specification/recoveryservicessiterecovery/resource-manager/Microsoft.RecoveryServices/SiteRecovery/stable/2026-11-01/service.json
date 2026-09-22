@@ -3529,6 +3529,9 @@
           "Enables protection for an A2A confidential VM with CMK disk encryption.": {
             "$ref": "./examples/ReplicationProtectedItems_Create_A2ACvm.json"
           },
+          "Enables protection for an InMage RCM VM in an extended location.": {
+            "$ref": "./examples/ReplicationProtectedItems_Create_InMageRcmEdgeZone.json"
+          },
           "Enables protection.": {
             "$ref": "./examples/ReplicationProtectedItems_Create.json"
           }
